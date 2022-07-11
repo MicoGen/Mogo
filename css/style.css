@@ -1,0 +1,77 @@
+/* /.../... - level down */
+/* ... - current catalog */
+/* ../... - level up*/
+
+/* Use fonts */
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "KaushanScript-Regular";
+    src: url("/fonts/KaushanScript-Regular.ttf");
+}
+
+body {
+    font-family: "Montserrat-Regular", sans-serif;
+
+    font-size: 15px;
+    color:black;
+
+    margin: 0;
+}
+
+/* block height and width = height and width include border and padding*/
+/* for all elements */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+/* font-family: 'Kaushan Script', cursive; */
+
+.cl_header {
+    /* header is static, and don't move after scrolling */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* header lays on top */
+    z-index: 1000;
+    width: 100%;
+}
+
+.cl_header_logo {
+    font-family: "Montserrat-Bold", sans-serif ;
+    font-size: 30px;
+    font-weight: 700 ;
+    color: white;
+}
+
+/* intro block */
+div.cl_intro {
+    width: 100%;
+    /* 100% height of the current page  */
+    height: 100vh;
+    background: url("/images/header_background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+div.cl_container {
+    /* margin: 0 top and bottom, auto leftand right */
+    margin: 0 auto;
+    height: 100%;
+    width: 1200px;
+}
+
+
+
