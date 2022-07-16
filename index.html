@@ -4,24 +4,28 @@
         <meta charset="UTF-8">
         <title> Mogo site</title>
         <link rel="stylesheet" href="css/style.css">
+    </head>
     <body>
+
+        <!-- __________ Header __________  -->
         <header class="cl_header">
-            <div class="cl_container ">
+            <div class="cl_container cl_header_container">
                 <div class="cl_header_inner">
                     <div class="cl_header_logo">MoGo </div>
                     <nav class="cl_toolbar">
-                        <a class="cl_toolbar_item" href="#">About</a>
+                        <a class="cl_toolbar_item cl_toolbar_item_active" href="#">About</a>
                         <a class="cl_toolbar_item" href="#">Service</a>
                         <a class="cl_toolbar_item" href="#">Work</a>
                         <a class="cl_toolbar_item" href="#">Blog</a>
                         <a class="cl_toolbar_item" href="#">Contact</a>
-                    
+                        <!-- TO DO "basket" item -->
+                        <!-- TO DO "search" item -->
                     </nav>
                 </div>
-                
-            </div>
-            
+            </div>    
         </header>
+
+        <!-- __________ Intro container __________  -->
         <div class="cl_intro">
             <div class="cl_container cl_intro_container">
                 <div class="cl_intro_inner_title">
@@ -29,12 +33,33 @@
                     <h1 class="cl_intro_title"> Welcome to MoGo</h1>
                     <a class="cl_intro_button_learn_more" href="#">learn more</a>
                 </div>
-                
             </div>
+
+         <!-- __________ Slider container __________  -->
+            <div class="cl_intro_slider">
+                <div class="cl_container cl_slider_container">
+                    <div class="cl_intro_inner_slider">
+                        <div class="cl_intro_slider_item cl_intro_slider_item_active">
+                            <span class="cl_intro_slider_item_number">01</span> 
+                            intro
+                        </div>
+                        <div class="cl_intro_slider_item">
+                            <span class="cl_intro_slider_item_number">02</span> 
+                            work
+                        </div>
+                        <div class="cl_intro_slider_item">
+                            <span class="cl_intro_slider_item_number">03</span> 
+                            about
+                        </div>
+                        <div class="cl_intro_slider_item">
+                            <span class="cl_intro_slider_item_number">04</span> 
+                            contacts
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        
-        <!-- TO DO -->
-        <!-- make scroller -->
 
     </body>
 </html>
