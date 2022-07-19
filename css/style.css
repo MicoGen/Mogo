@@ -18,10 +18,15 @@
     src: url("/fonts/KaushanScript-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("/fonts/Roboto-Regular.ttf");
+}
+
 body {
     font-family: "Montserrat-Regular", sans-serif;
     font-size: 15px;
-    color:black;
+    color: #000;
     line-height: 1.6;
     margin: 0;
 }
@@ -32,11 +37,13 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
-/* __________ Header __________  */
+                    /* __________ <<< FIRST BLOCK: "INTRO" >>> __________  */
+                    
+/* __________ INTRO Header __________  */
 .cl_header {
     position: absolute;
     padding-top: 30px;
@@ -60,15 +67,15 @@ h1, h2 {
     align-items: center;
 }
 
-/* __________ Header logo __________  */
+/* __________ INTRO Header logo __________  */
 .cl_header_logo {
     /* sans-serif - without "засечек", that helps easier undestand the text */
     font-family: "Montserrat-Bold", sans-serif ;
     font-size: 30px;
-    color: white;
+    color: #fff;
 }
 
-/* __________ Header toolbar __________  */
+/* __________ INTRO Header toolbar __________  */
 .cl_toolbar {
     text-transform: uppercase;
     font-size: 14px;
@@ -80,7 +87,7 @@ h1, h2 {
     margin: 0 15px;
     text-decoration: none; 
     vertical-align: top;
-    color: white;
+    color: #fff;
     /* calm linear transition (переход) color from white to yellow */
     transition: color 0.2ms linear;
 }
@@ -108,7 +115,7 @@ h1, h2 {
     opacity: 1;
 }
 
-/* __________ Intro block __________ */
+/* __________ INTRO block __________ */
 .cl_intro {
     display: flex;
     flex-direction: column;
@@ -124,17 +131,17 @@ h1, h2 {
     width: 100%;
     max-width: 880px; 
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
-/* __________ "Creative Template" __________ */
+/* __________ INTRO suptitle "Creative Template" __________ */
 .cl_intro_suptitle {
     font-family: "KaushanScript-Regular", sans-serif;
     font-size: 72px;
     margin-bottom: 10px;
 }
 
-/* /__________ "Welcome to MoGo" __________ */
+/* /__________ ONTRO title "Welcome to MoGo" __________ */
 .cl_intro_title {
     font-family: "Montserrat-Bold", sans-serif ;
     font-size: 150px;
@@ -147,10 +154,11 @@ h1, h2 {
     content: "";
     margin: 60px auto;
     height: 3px;
-    background-color: white;
+    width: 60px;
+    background-color: #fff;
 }
 
-/* __________ Intro button __________ */
+/* __________ INTRO button __________ */
 .cl_intro_button_learn_more {
     display: inline-block;
     font-family: "Monserrat-Bold", sans-serif;
@@ -158,8 +166,8 @@ h1, h2 {
     padding: 8px 30px;
     text-transform: uppercase; 
     text-decoration: none;
-    border: 3px solid white;
-    color: white;
+    border: 3px solid #fff;
+    color: #fff;
     transition: border 0.1s linear, color 0.1s linear;
 }
 
@@ -167,7 +175,7 @@ h1, h2 {
     color: #fce38a;
     border-color: #fce38a;
 }
-/* __________ Slider __________ */
+/* __________ INTRO Slider __________ */
 .cl_intro_slider {
     position: absolute;
     width: 100%;
@@ -188,8 +196,8 @@ h1, h2 {
     font-size: 18px;
     opacity: 0.7;
     text-transform: uppercase;    
-    color: white;
-    border-top: 3px solid white;
+    color: #fff;
+    border-top: 3px solid #fff;
     transition: color 0.2s linear, border 0.2s linear;
 }
 
@@ -207,7 +215,7 @@ h1, h2 {
     border-color: #fce38a;
 }
 
-/* __________ Slider first item pink line __________  */
+/* __________ INTRO Slider first item pink line __________  */
 .cl_intro_slider_item_active::before {
     position: absolute;
     display: block;
@@ -220,3 +228,119 @@ h1, h2 {
     z-index: 1;
 }
 
+                    /* __________ <<< SECOND BLOCK: "ABOUT US" >>> __________  */
+
+/* __________ ABOUT US section __________  */
+.cl_section_about_us {
+    padding: 80px 0;
+}
+
+/* ABOUT US title section */
+.cl_section_inner_about_us {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ABOUT US suptitle "What we do" */
+.cl_about_us_suptitle {
+    font-family: "KaushanScript-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* ABOUT US title "Story about us" */
+.cl_about_us_title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.cl_about_us_title::after {
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 30px auto;
+    content: "";
+    background-color: #f38181;
+    
+}
+
+/* ABOUT US text */
+.cl_about_us_text {
+    font-family: "Roboto-Regular", sans-serif;
+    color: #999;
+}
+
+/* ABOUT US gallery */
+.cl_about_us_gallery {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+/* ABOUT US gallery item */
+.cl_about_us_gallery_item {
+    position: relative;
+    width: 380px;
+    background-color: #95e1d3;
+}
+
+/* наводим на "item", применяется к блоку "img" (div class="..._img")*/
+.cl_about_us_gallery_item:hover .cl_about_us_gallery_img {
+    transform: translate3d(-10px, -10px, 0) ;
+}
+
+/* наводим на "item", применяется к изображению (<img....)*/
+.cl_about_us_gallery_item:hover .cl_about_us_gallery_img img {
+    opacity: 0.1;
+}
+
+/* ABOUT US gallery img */ 
+.cl_about_us_gallery_img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform 0.2s linear;
+}
+
+.cl_about_us_gallery_img img{
+    display: block;
+    transition: opasity 0.2s linear;
+}
+
+/* ABOUT US gallery text */
+.cl_about_us_gallery_text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    z-index: 2;
+    transform: translate3d(-10px, -50%, 0);
+    transition: opacity 0.2s linear;
+}
+
+.cl_about_us_gallery_item:hover .cl_about_us_gallery_text {
+    opacity: 1;
+}
+
+                    /* __________ <<< THIRD BLOCK: "STATS" >>> __________  */
+
+/* STATS */
+.cl_stats {
+    background-color: #95e1d3;
+}
+
+.cl_stats_inner {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
