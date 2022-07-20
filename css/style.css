@@ -115,6 +115,8 @@ h1, h2, h3, h4 {
     opacity: 1;
 }
 
+/* TO DO: opacity 0 and background-color for icon */
+
 /* __________ INTRO block __________ */
 .cl_intro {
     display: flex;
@@ -122,7 +124,7 @@ h1, h2, h3, h4 {
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background: url("/images/header_background.jpg") center no-repeat;
+    background: url("/images/intro_background.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -308,6 +310,19 @@ h1, h2, h3, h4 {
     transition: opasity 0.2s linear;
 }
 
+/* ABOUT US gallery icon */
+.cl_about_us_gallery_icon {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    transform: translate3d(-10px, -150%, 0);
+    transition: opacity 0.2s linear;
+}
+
 /* ABOUT US gallery text */
 .cl_about_us_gallery_text {
     position: absolute;
@@ -325,7 +340,8 @@ h1, h2, h3, h4 {
     transition: opacity 0.2s linear;
 }
 
-.cl_about_us_gallery_item:hover .cl_about_us_gallery_text {
+.cl_about_us_gallery_item:hover .cl_about_us_gallery_text,
+.cl_about_us_gallery_item:hover .cl_about_us_gallery_icon {
     opacity: 1;
 }
 
@@ -374,4 +390,150 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
-                    /* __________ <<< FORTH BLOCK: "OUR TEAM" >>> __________  */
+                    /* __________ <<< FORTH BLOCK: "SERVICES" >>> __________  */
+
+/* SERVICES header */
+.cl_section_services {
+    padding: 80px 0;
+}
+
+/* SERVICES inner block */
+.cl_services_inner {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* SERVICES suptitle */
+.cl_services_inner_suptitle {
+    font-family: "KaushanScript-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* SERVICES title */
+.cl_services_inner_title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.cl_services_inner_title::after {
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 30px auto 55px;
+    content: "";
+    background-color: #f38181;
+}
+
+/* SERVICES gallery first row */
+ .cl_services_gallery_first {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* SERVICES gallery item */
+.cl_services_gallery_item {
+    position: relative;
+    width: 100%;
+    padding-left: 85px;
+    padding-right: 35px;
+    flex: 1 1 0;
+}
+
+/* SERVICES gallery icon */
+.cl_services_gallery_icon {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    z-index: 1;
+}
+
+/* SERVICES gallery title */
+.cl_services_gallery_title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* SERVICES gallery text */
+.cl_services_gallery_text {
+    font-family: "Roboto-Regular", sans-serif;
+    color: #999;
+} 
+
+/* SERVICES gallery second row */
+.cl_services_gallery_second {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+                    /* __________ <<< FIFTH BLOCK: "DEVICES" >>> __________  */
+
+/* DEVICES section*/
+.cl_devices_section {
+    width: 100%;
+    padding-top: 80px;
+    background: url("/images/devices_background_1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+/* DEVICES inner (header) */
+.cl_devices_inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* DEVICES suptitle */
+.cl_devices_inner_suptitle {
+    font-family: "KaushanScript-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* DEVICES title */
+.cl_devices_inner_title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.cl_devices_inner_title::after {
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 30px auto 40px;
+    content: "";
+    background-color: #f38181;
+    z-index: 1;
+}
+
+/* DEVICES gallery */
+.cl_devices_gallery {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* DEVICES tablet */
+.cl_devices_gallery_tablet {
+    display: block;
+}
+
+/* DEVICES phone */
+.cl_devices_gallery_phone {
+    display: block;
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    z-index: 1;
+}
+
+                    /* __________ <<< SIXTH BLOCK: "WE DO" >>> __________  */
