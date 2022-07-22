@@ -17,6 +17,6 @@ TO DO:
   
 Useful links:
 > Youtube video tutorial on making site layout: https://www.youtube.com/watch?v=ltMSrSis9ww  
-> Template downolad from: https://freebiesbug.com/psd-freebies/mogo-free-one-page-psd-template/ 
-> Icons for web: https://fontawesome.com/
+> Template downolad from: https://freebiesbug.com/psd-freebies/mogo-free-one-page-psd-template/   
+> Icons for web: https://fontawesome.com/  
 > Support tables for HTML5/CSS3: https://caniuse.com/
