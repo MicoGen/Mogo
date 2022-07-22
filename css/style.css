@@ -110,21 +110,17 @@ h1, h2, h3, h4, p {
     transition: opacity 0.1s linear;
 }
 
-.cl_toolbar_item:hover,
-.cl_toolbar_item_active {
+.cl_toolbar_item:hover {
     color: #fce38a;
 }
 
-.cl_toolbar_item:hover::after,
-.cl_toolbar_item_active::after {
+.cl_toolbar_item:hover::after {
     opacity: 1;
 }
 
-.cl_toolbar_item:hover .cl_toolbar_item img {
-    /* TO DO change "basket" icon on "basket_active" icon */
+.cl_toolbar_item.cl_toolbar_icon:hover::after {
+    opacity: 0;
 }
-
-/* TO DO: opacity 0 and background-color for icon */
 
 /* __________ INTRO block __________ */
 .cl_intro {
@@ -326,9 +322,11 @@ h1, h2, h3, h4, p {
     top: 50%;
     left: 0;
     text-align: center;
+    font-size: 24px;
     opacity: 0;
     z-index: 2;
-    transform: translate3d(-10px, -150%, 0);
+    color: #fff;
+    transform: translate3d(-10px, -125%, 0);
     transition: opacity 0.2s linear;
 }
 
@@ -838,18 +836,23 @@ h1, h2, h3, h4, p {
     opacity: 1;
 }
 
+/* TEAM icon */
 .cl_team__icon {
     flex: 1 1 0;
-    padding: 15px 15px 9px;
-}
-
-.cl_team__icon_1group {
-    background-color: #f38181;
-}
-
-.cl_team__icon_2group {
-    border-left: 1px solid #f9bd87;
+    /* padding: 15px 15px 9px; */
+    border-right: 1px solid #f9bd87;
+    font-size: 30px;
+    color: #f38181;
     background-color: #fce38a;
+}
+
+.cl_team__icon:last-child {
+    border-right: 0;
+}
+
+.cl_team__icon:hover {
+    color: #fff;
+    background-color: #f38181;
 }
 
 /* TEAM pers */
