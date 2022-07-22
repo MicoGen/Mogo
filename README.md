@@ -5,10 +5,13 @@
 + "Stats" 
 + "Services" 
 + "Devices"
-
++ "We do"
++ "Comment"
++ "Team"
 
 TO DO:
  - add hover color change to "search" and "basket" toolbar items
+ - add js logic 
   
 > Youtube video tutorial on making site layout: https://www.youtube.com/watch?v=ltMSrSis9ww  
 > Template downolad from: https://freebiesbug.com/psd-freebies/mogo-free-one-page-psd-template/ 
