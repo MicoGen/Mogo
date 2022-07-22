@@ -23,6 +23,11 @@
     src: url("/fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Roboto-LightItalic";
+    src: url("/fonts/Roboto-LightItalic.ttf");
+}
+
 body {
     font-family: "Montserrat-Regular", sans-serif;
     font-size: 15px;
@@ -37,7 +42,7 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
@@ -113,6 +118,10 @@ h1, h2, h3, h4 {
 .cl_toolbar_item:hover::after,
 .cl_toolbar_item_active::after {
     opacity: 1;
+}
+
+.cl_toolbar_item:hover .cl_toolbar_item img {
+    /* TO DO change "basket" icon on "basket_active" icon */
 }
 
 /* TO DO: opacity 0 and background-color for icon */
@@ -537,3 +546,327 @@ h1, h2, h3, h4 {
 }
 
                     /* __________ <<< SIXTH BLOCK: "WE DO" >>> __________  */
+
+/* WE DO section */
+.cl_wedo_section {
+    /* padding: 130px 0 120px; */
+    padding: 100px 0;
+}
+
+/* WE DO header */
+.cl_wedo_header {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* WE DO header suptitle */
+.cl_wedo_header_suptitle {
+    font-family: "KaushanScript-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* WE DO header title */
+.cl_wedo_header_title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.cl_wedo_header_title::after {
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 30px auto 40px;
+    content: "";
+    background-color: #f38181;
+    z-index: 1;
+}
+
+/* WE DO header text */
+.cl_wedo_header_text {
+    margin-bottom: 80px;
+    font-family: "Roboto-Regular", sans-serif;
+    color: #999;
+}
+
+/* WE DO content */
+.cl_wedo_content {
+    display: flex;
+
+}
+
+/* WE DO content item */
+.cl_wedo_content_item {
+    width: 50%;
+}
+
+.cl_wedo__menu_item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+
+}
+
+/* WE DO item header */
+.cl_wedo__item_header {
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    
+}
+
+.cl_wedo__header_logo {
+    position: absolute;
+    left: 15px;
+    /* top + translate = center */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cl_wedo__header_title {
+    padding: 15px 20px 15px 60px ;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cl_wedo__header_icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cl_wedo__item_text {
+    position: relative;
+    display: none;
+    padding: 20px 50px 15px 20px;
+    margin-bottom: 10px;
+    font-family: "Roboto-LightItalic", sans-serif;
+    color: #999;
+}
+
+.cl_wedo__menu_item.active .cl_wedo__item_text {
+    display: block;
+}
+
+.cl_wedo__item_text_scroller {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    z-index: 1;
+}
+
+                    /* __________ <<< SEVENTH BLOCK: "COMMENT" >>> __________  */
+
+/* COMMENT section */
+.cl_comment_section {
+    padding: 70px 0 65px;
+    background-color: #f1f1f1;
+}
+
+.cl_comment_inner {
+    padding: 0 110px;
+    position: relative;
+}
+
+/* COMMENT btn */
+.cl_comment_btn {
+    position: absolute;
+    font-size: 0;
+    color: transparent;
+    top: 40%;
+    /* transform: translateY(-50%); */
+    z-index: 1;
+}
+
+.cl_comment_btn::after {
+    display: block;  
+    height: 16px;
+    width: 16px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    content: "";
+}
+
+.cl_comment_btn_left {
+    left: 25px;
+    transform: rotate(45deg);
+}
+
+.cl_comment_btn_right {
+    right: 25px;
+    transform: rotate(225deg);
+}
+
+.cl_comment_inner_icon {
+    position: absolute;
+    display: block;
+    height: 150px;
+    width: 150px;
+    left: 110px;
+    padding: 40px 45px 50px;
+    border: 3px solid #95e1d3;
+}
+
+.cl_comment_inner_block {
+    margin-left: 200px;
+}
+
+.cl_comment__block_text {  
+    margin-bottom: 15px;
+    font-family: "Roboto-LightItalic", sans-serif;
+    font-size: 24px;
+    color: #999;
+}
+
+.cl_comment__block_pers {
+    font-family: "KaushanScript-Regular", sans-serif;
+    font-size: 24px;
+}
+
+.cl_comment__block_pers::before {
+    display: inline-block;
+    height: 3px;
+    width: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+    content: "";
+    background-color: #f38181;
+}
+
+                    /* __________ <<< EIGHTH BLOCK: "TEAM" >>> __________  */
+
+/* TEAM section */
+.cl_team {
+    padding: 100px 0 110px;
+}
+
+/* TEAM header */
+.cl_team_header {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* TEAM suptitle */
+.cl_team_header_suptitle {
+    font-family: "KaushanScript-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* TEAM title */
+.cl_team_header_title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.cl_team_header_title::after {
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 40px auto;
+    background-color: #f38181;
+    content: "";
+}
+
+/* TEAM text */
+.cl_team_header_text {
+    margin-bottom: 90px;
+    font-family: "Roboto-Regular", sans-serif;
+    color: #999;
+}
+
+/* TEAM GALLERY */
+.cl_team_gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* TEAM gallery item */
+.cl_team_gallery_item {
+    width: 30%;
+}
+
+/* TEAM gallery item img */
+.cl_team__item_block {
+    position: relative;
+    width: 380px;
+    background-color: #95e1d3;
+}
+
+.cl_team__item_block:hover .cl_team__item_img {
+    /* -10px shift by hover it is about -5% */
+    transform: translate3d(-10px, -10px, 0) ;
+}
+
+.cl_team__item_block:hover .cl_team__item_img img {
+    opacity: 0.1;
+}
+
+.cl_team__item_img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform 0.2s linear;
+}
+
+.cl_team__item_img img {
+    display: block;
+    transition: opacity 0.2s linear;
+}
+
+/* TEAM item icon block */
+.cl_team__item_icon_block {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    max-width: 225px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    /* -10px shift by hover it is about -5% */
+    transform: translate3d(-55%, -55%, 0);
+    transition: opacity 0.2s linear;
+}
+
+.cl_team__item_block:hover .cl_team__item_icon_block {
+    opacity: 1;
+}
+
+.cl_team__icon {
+    flex: 1 1 0;
+    padding: 15px 15px 9px;
+}
+
+.cl_team__icon_1group {
+    background-color: #f38181;
+}
+
+.cl_team__icon_2group {
+    border-left: 1px solid #f9bd87;
+    background-color: #fce38a;
+}
+
+/* TEAM pers */
+.cl_team__item_pers {
+    padding-top: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* TEAM prof */
+.cl_team__item_prof {
+    padding-top: 5px;
+    font-family: "Roboto-LightItalic", sans-serif;
+    text-align: center;
+    color: #999;
+}
+
+                    /* __________ <<< NINTH BLOCK: "LOGO" >>> __________  */
