@@ -1,5 +1,5 @@
-# Mogo web
-#### Site layput structure (complete):
+# Mogo web (Struct complete)
+#### Site layput structure:
 + "Intro"
 + "About us" 
 + "Stats" 
@@ -14,12 +14,14 @@
 + "Clients"
 + "Blog"
 + "Map"
++ "Footer"
 
 Improvements
 - added icons from https://fontawesome.com/  
 
 TO DO:
  - add js logic.
+ - add additive design
   
 Useful links:
 > Youtube video tutorial on making site layout: https://www.youtube.com/watch?v=ltMSrSis9ww  
