@@ -8,9 +8,15 @@
 + "We do"
 + "Comment"
 + "Team"
++ "Logo"
++ "Work"
++ "Comment2"
++ "Clients"
++ "Blog"
++ "Map"
 
 Improvements
-- added icons for toobar, "about us" gallery and "team" social webs. 
+- added icons from https://fontawesome.com/  
 
 TO DO:
  - add js logic.
